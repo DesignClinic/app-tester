@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="">
+        <meta name="keywords" content="mot-clé1, mot-clé2, mot-clé3">
+        <meta name="robots" content="index, follow">
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+
+        <!-- Webpage Title -->
+        <title></title>
+
+        <!-- Styles -->
+        <link href="style.css" rel="stylesheet">
+        
+        <!-- Favicon  -->
+        <link rel="icon" href="favicon.png">
+    </head>
+    <body id="body">
+        <div id="app">
+            <!-- Champs de Recherche -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher un Profil">
+            </div>
+
+            <!-- Formulaire de Création de Profil -->
+            <div class="form-container">
+                <h2>Créer un Profil</h2>
+                <form id="profileForm">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+            
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                  
+                    <label for="genre">Genre :</label>
+                    <select id="genre" name="genre">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                    <label for="dateNaissance">Date de Naissance :</label>
+                    <input type="date" id="dateNaissance" name="dateNaissance" required>
+            
+                    <label for="adresseName">Adresse :</label>
+                    <input type="text" id="adresseName" name="adresseName" required>
+                    <label for="adresseZip">Code postal :</label>
+                    <input type="text" id="adresseZip" name="adresseZip" pattern="\d+" required>
+                    <label for="adresseCity">Ville :</label>
+                    <input type="text" id="adresseCity" name="adresseCity" required>
+            
+                    <label for="permis">Permis de conduire :</label>
+                    <input type="checkbox" id="permis" name="permis">
+                    <label for="typePermis">Type de Permis :</label>
+                    <input type="text" id="typePermis" name="typePermis">
+            
+                    <label for="fichier">Ajout de Fichier :</label>
+                    <input type="file" id="fichier" name="fichier">
+
+                    <label for="avatar">Photo de Profil :</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+            
+                    <button type="submit">Créer Profil</button>
+                </form>
+            </div>
+            
+    
+            <!-- Cartes de Profils -->
+            <div class="profiles-container">
+                <!-- La liste des profils sera ajoutée ici dynamiquement -->
+            </div>
+    
+            <!-- Page du Profil -->
+            <div class="profile-page-container"></div>
+    
+            <!-- Formulaire de Modification du Profil -->
+            <div class="profile-form-container"></div>
+        </div>
+    
+        <script src="app.js"></script>
+    </body>
+</html>
